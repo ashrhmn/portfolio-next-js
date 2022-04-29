@@ -36,7 +36,7 @@ const Layout = ({ children }: { children: any }) => {
             <FaTelegram className="h-6 w-6 cursor-pointer" />
           </Link>
         </div>
-        <div className="max-w-[1200px] my-10 md:px-16 mx-auto">{children}</div>
+        <div className="max-w-[1200px] mb-10 md:px-16 mx-auto">{children}</div>
         <div className="fixed top-[45%] right-[3rem] h-[55%] after:contents-[''] after:bg-[#47528f] after:inline-block after:absolute after:right-[0.6rem] after:w-[1px] after:h-[100%] after:top-[18rem] hidden md:block">
           <Link href={`mailto:ashrhmn@outlook.com`} passHref>
             <a className="text-sm leading-[1]">
