@@ -5,7 +5,7 @@ import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex items-center">
+      <div className="flex flex-col-reverse md:flex-row items-center">
         <div className="w-full">
           <h1>Hi there,</h1>
           <h1 className="text-6xl font-bold my-4">I am Ashik</h1>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 Resume
               </a>
             </Link>
-            <Link href={``} passHref>
+            <Link href={`/contact`} passHref>
               <a className="py-3 px-6 w-28 border-2 border-lightPrimary text-lightPrimary dark:border-darkPrimary dark:text-darkPrimary hover:bg-lightPrimary hover:text-black dark:hover:bg-darkPrimary hover:scale-110 transition-all">
                 Hire Me
               </a>
