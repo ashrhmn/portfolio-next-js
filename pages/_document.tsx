@@ -9,7 +9,30 @@ export default function Document() {
           property="og:image"
           content="https://v2.ashrhmn.com/images/user1.jpeg"
         />
-        <meta name="description" content="Fullstack and Blockchain Developer" />
+        <meta
+          name="title"
+          content="Ashik Rahman | Fullstack and Blockchain Developer"
+        />
+        <meta name="keywords" content="Ashik Rahman" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="index" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ashrhmn7" />
+        <meta
+          name="twitter:title"
+          content="Ashik Rahman | Fullstack and Blockchain Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="23 years old and from Bangladesh. Development has been an interest for many years, and works with anything from Desktop App to Mobile App and fullstack development. All the skills and tools are self-taught over years of practice and expanding my horizons"
+        />
+        <meta property="og:site_name" content="Ashik Rahman" />
+        <meta property="og:url" content="https://ashrhmn.com/" />
+        <meta
+          property="og:description"
+          content="23 years old and from Bangladesh. Development has been an interest for many years, and works with anything from Desktop App to Mobile App and fullstack development. All the skills and tools are self-taught over years of practice and expanding my horizons"
+        />
+        <meta property="og:type" content="website" />
       </Head>
       <body>
         <Main />
