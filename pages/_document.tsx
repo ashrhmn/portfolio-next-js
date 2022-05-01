@@ -4,7 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="description" content="Ashik Rahman - Portfolio Website" />
+        <meta property="og:title" content="Ashik Rahman - Developer" />
+        <meta
+          property="og:image"
+          content="https://v2.ashrhmn.com/images/user1.jpeg"
+        />
+        <meta name="description" content="Fullstack and Blockchain Developer" />
       </Head>
       <body>
         <Main />
