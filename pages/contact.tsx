@@ -8,8 +8,10 @@ const ContactPage: NextPage = () => {
   const nameInput = useInput();
   const emailInput = useInput();
   const messageInput = useInput();
-  const [responseMessage, setResponseMessage] = useState("asd");
+  const [responseMessage, setResponseMessage] = useState("");
+  const [isMailSending, setIsMailSending] = useState(false);
   const handleSendMail = async () => {
+    setIsMailSending(true);
     const data = {
       name: nameInput.value,
       email: emailInput.value,
@@ -26,6 +28,7 @@ const ContactPage: NextPage = () => {
       console.log(error);
       setResponseMessage("Server Error");
     }
+    setIsMailSending(false);
   };
   return (
     <div className="w-full">
