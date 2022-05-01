@@ -19,7 +19,7 @@ const AboutPage: NextPage = () => {
         <p className="text-xl">
           I am Ashik Rahman, 23 years old and from Bangladesh. Development has
           been an interest of mine for many years, and I work with anything from
-          Desktop App to Mobile App and front-end development. All the skills
+          Desktop App to Mobile App and fullstack development. All the skills
           and tools I use, are self-taught over years of practice and expanding
           my horizons.
         </p>
