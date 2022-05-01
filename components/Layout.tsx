@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: any }) => {
         <Link href={`/works`}>Works</Link>
         <Link href={`/contact`}>Contact</Link>
       </nav>
-      <div className="p-10 flex flex-col-reverse md:flex-row gap-x-10">
+      <div className="p-10 flex flex-col-reverse justify-center md:flex-row gap-x-10">
         <div className="flex justify-center md:justify-start md:flex-col gap-4 md:fixed md:top-[55%] md:left-[3rem] md:h-[45%] md:after:contents-[''] md:after:bg-[#47528f] md:after:inline-block md:after:absolute md:after:left-[0.6rem] md:after:w-[1px] md:after:h-[100%] md:after:top-[14rem]">
           <Link href={`https://github.com/ashrhmn`} passHref>
             <a aria-label="Github" target="_blank">
@@ -46,7 +46,9 @@ const Layout = ({ children }: { children: any }) => {
             </a>
           </Link>
         </div>
-        <div className="max-w-[1200px] mb-10 md:px-16 mx-auto">{children}</div>
+        <div className="max-w-[1200px] mb-10 md:px-16 flex-grow">
+          {children}
+        </div>
         <div className="fixed top-[45%] right-[3rem] h-[55%] after:contents-[''] after:bg-[#47528f] after:inline-block after:absolute after:right-[0.6rem] after:w-[1px] after:h-[100%] after:top-[18rem] hidden md:block">
           <Link href={`mailto:ashrhmn@outlook.com`} passHref>
             <a className="text-sm leading-[1]">

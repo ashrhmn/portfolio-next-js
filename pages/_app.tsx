@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Head>
         <title>Ashik Rahman</title>
       </Head>
-      <div key={router.route} className="slot-view">
+      <div key={router.route} className="slot-view w-full">
         <Component {...pageProps} />
       </div>
     </Layout>

@@ -7,7 +7,8 @@ const AboutPage: NextPage = () => {
   return (
     <div className="flex flex-col md:flex-row gap-6">
       <div className="w-full">
-        <div className="relative w-full aspect-square rounded-full overflow-hidden">
+        <h1 className="text-3xl font-bold mb-8">About Me</h1>
+        <div className="relative w-full max-w-md aspect-square rounded-full overflow-hidden mx-auto my-4">
           <Image
             src="/images/user1.jpeg"
             alt="Ashik Rahman"
@@ -15,7 +16,6 @@ const AboutPage: NextPage = () => {
             objectFit="cover"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-8">About Me</h1>
         <p className="text-xl">
           I am Ashik Rahman, 23 years old and from Bangladesh. Development has
           been an interest of mine for many years, and I work with anything from
@@ -31,7 +31,7 @@ const AboutPage: NextPage = () => {
             (skill) => (
               <span
                 style={{ opacity: `${skill.grade}` }}
-                className={`border-2 text-sm p-1 m-1 border-darkPrimary`}
+                className={`border-2 text-sm md:text-md md:my-3 p-1 m-1 border-darkPrimary`}
                 key={skill.name}
               >
                 {skill.name}
