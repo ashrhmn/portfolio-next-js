@@ -31,7 +31,7 @@ const AboutPage: NextPage = () => {
             (skill) => (
               <span
                 style={{ opacity: `${skill.grade}` }}
-                className={`border-2 text-sm md:text-md md:my-3 p-1 m-1 border-darkPrimary`}
+                className={`border-2 text-sm md:text-md md:my-3 p-1 m-1 text-lightPrimary dark:text-darkPrimary border-lightPrimary dark:border-darkPrimary`}
                 key={skill.name}
               >
                 {skill.name}
