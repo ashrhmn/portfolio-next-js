@@ -21,19 +21,29 @@ const Layout = ({ children }: { children: any }) => {
       <div className="p-10 flex flex-col-reverse md:flex-row gap-x-10">
         <div className="flex justify-center md:justify-start md:flex-col gap-4 md:fixed md:top-[55%] md:left-[3rem] md:h-[45%] md:after:contents-[''] md:after:bg-[#47528f] md:after:inline-block md:after:absolute md:after:left-[0.6rem] md:after:w-[1px] md:after:h-[100%] md:after:top-[14rem]">
           <Link href={`https://github.com/ashrhmn`} passHref>
-            <FaGithub className="h-6 w-6 cursor-pointer" />
+            <a aria-label="Github" target="_blank">
+              <FaGithub className="h-6 w-6 cursor-pointer" />
+            </a>
           </Link>
           <Link href={`https://instagram.com/ashrhmn7`} passHref>
-            <FaInstagram className="h-6 w-6 cursor-pointer" />
+            <a aria-label="Instagram" target="_blank">
+              <FaInstagram className="h-6 w-6 cursor-pointer" />
+            </a>
           </Link>
           <Link href={`https://facebook.com/ashrhmn7`} passHref>
-            <FaFacebook className="h-6 w-6 cursor-pointer" />
+            <a aria-label="Facebook" target="_blank">
+              <FaFacebook className="h-6 w-6 cursor-pointer" />
+            </a>
           </Link>
           <Link href={`https://twitter.com/ashrhmn7`} passHref>
-            <FaTwitter className="h-6 w-6 cursor-pointer" />
+            <a aria-label="Twitter" target="_blank">
+              <FaTwitter className="h-6 w-6 cursor-pointer" />
+            </a>
           </Link>
           <Link href={`https://t.me/ashrhmn`} passHref>
-            <FaTelegram className="h-6 w-6 cursor-pointer" />
+            <a aria-label="Telegram" target="_blank">
+              <FaTelegram className="h-6 w-6 cursor-pointer" />
+            </a>
           </Link>
         </div>
         <div className="max-w-[1200px] mb-10 md:px-16 mx-auto">{children}</div>

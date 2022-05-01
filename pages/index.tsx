@@ -5,7 +5,7 @@ import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-row items-center">
+      <div className="flex flex-col-reverse md:flex-row md:items-center">
         <div className="w-full">
           <h1>Hi there,</h1>
           <h1 className="text-6xl font-bold my-4">I am Ashik</h1>
@@ -38,12 +38,13 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </div>
-        <div className="relative h-96 w-full">
+        <div className="relative min-h-[200px] md:min-h-[500px] w-full">
           <Image
             src={`/images/hero-portfolio.png`}
             alt="Hero Image Ashik Rahman"
             layout="fill"
             objectFit="contain"
+            priority
           />
         </div>
       </div>
