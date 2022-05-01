@@ -28,7 +28,7 @@ const ContactPage: NextPage = () => {
 
     try {
       const { data: response } = await axios.post(`/api/email`, data);
-      console.log(response);
+      // console.log(response);
       setResponseMessage(
         response.msg === "sent" ? "Message Sent" : "An unknown error occured"
       );

@@ -12,10 +12,11 @@ import {
 const Layout = ({ children }: { children: any }) => {
   return (
     <div className="dark:bg-darkBg dark:text-white min-h-screen">
-      <nav className="flex justify-end gap-x-4 md:gap-x-10 p-8">
+      <nav className="flex flex-wrap justify-end gap-x-2 md:gap-x-10 p-8">
         <Link href={`/`}>Home</Link>
         <Link href={`/about`}>About</Link>
         <Link href={`/works`}>Works</Link>
+        <Link href={`/blogs`}>Blogs</Link>
         <Link href={`/contact`}>Contact</Link>
       </nav>
       <div className="p-10 flex flex-col-reverse justify-center md:flex-row gap-x-10">
