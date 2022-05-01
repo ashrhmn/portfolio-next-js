@@ -22,6 +22,8 @@ export default function Document() {
           name="twitter:title"
           content="Ashik Rahman | Fullstack and Blockchain Developer"
         />
+        <meta property="fb:app_id" content="ashrhmn7" />
+        <meta property="og:image:alt" content="Ashik Rahman | Developer" />
         <meta
           name="twitter:description"
           content="23 years old and from Bangladesh. Development has been an interest for many years, and works with anything from Desktop App to Mobile App and fullstack development. All the skills and tools are self-taught over years of practice and expanding my horizons"
