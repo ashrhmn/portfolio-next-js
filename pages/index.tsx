@@ -23,7 +23,7 @@ const Home: NextPage = () => {
               {" "}
               Technology
             </span>
-            . I love things simple and organized.
+            . I love things simple and <Link href={`/temp`}>organized</Link>.
           </p>
           <div className="mt-8 justify-center md:justify-start flex gap-10">
             <Link href={`/Resume.pdf`} passHref>
