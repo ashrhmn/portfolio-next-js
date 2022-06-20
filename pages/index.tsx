@@ -14,11 +14,11 @@ const Home: NextPage = () => {
             <span className="dark:text-darkPrimary text-lightPrimary">
               Fullstack
             </span>{" "}
-            and{" "}
+            Developer and{" "}
             <span className="dark:text-darkPrimary text-lightPrimary">
               Blockchain
             </span>{" "}
-            Developer. I am passionate about{" "}
+            Engineer. I am passionate about{" "}
             <span className="dark:text-darkPrimary text-lightPrimary">
               {" "}
               Technology
