@@ -14,16 +14,16 @@ export default async function handler(
     return res.status(405).json({ msg: "Method not allowed" });
   try {
     const transport = createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
+      host: "smtp.sendgrid.net",
+      port: 25,
       secure: false,
       auth: {
-        user: "fmslaravel@gmail.com",
-        pass: "FmsLaravelApp1234",
+        user: "apikey",
+        pass: "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",
       },
     });
     await transport.sendMail({
-      from: "Ashik FMS",
+      from: "v2@ashrhmn.com",
       to: "ashrhmn@outlook.com",
       subject: `${req.body.name} - from Portfolio Website`,
       html: `${req.body.msg} 
