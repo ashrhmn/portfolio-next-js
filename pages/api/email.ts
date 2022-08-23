@@ -22,7 +22,8 @@ export default async function handler(
         pass: process.env.SEND_GRID_KEY,
       },
     });
-    const sendMail = await transport.sendMail({
+    // const sendMail =
+    await transport.sendMail({
       from: "v2@ashrhmn.com",
       to: "ashrhmn@outlook.com",
       subject: `${req.body.name} - from Portfolio Website`,
