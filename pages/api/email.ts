@@ -19,10 +19,10 @@ export default async function handler(
       secure: false,
       auth: {
         user: "apikey",
-        pass: "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",
+        pass: process.env.SEND_GRID_KEY,
       },
     });
-    await transport.sendMail({
+    const sendMail = await transport.sendMail({
       from: "v2@ashrhmn.com",
       to: "ashrhmn@outlook.com",
       subject: `${req.body.name} - from Portfolio Website`,
@@ -30,6 +30,8 @@ export default async function handler(
       
       ${req.body.email}`,
     });
+    // console.log({ sendMail });
+
     return res.status(200).json({ msg: "sent" });
   } catch (error: any) {
     return res.status(500).json({ msg: error });
